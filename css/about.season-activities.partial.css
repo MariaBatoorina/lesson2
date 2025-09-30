@@ -1,0 +1,341 @@
+.season-activities {
+  padding: 40px 20px;
+}
+
+.season-activities__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.season-activities__title {
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #222;
+  padding: 0 20px;
+}
+
+.season-activities__subtitle {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+.season-activities__winter,
+.season-activities__summer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.season-activities__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.season-activities__text,
+.season-activities__spa-text,
+.any-questions__subtitle {
+  text-align: justify;
+}
+
+.season-activities__text {
+  text-align: justify;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  width: 100%;
+}
+
+.season-activities__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.season-activities__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1rem;
+  padding-left: 28px;
+  position: relative;
+}
+
+.season-activities__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 510 510'%3E%3Cpath fill='orange' d='M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm-51 382.5L76.5 255l35.7-35.7 91.8 91.8 193.8-193.8 35.7 35.7L204 382.5z'/%3E%3C/svg%3E");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.season-activities__winter-image,
+.season-activities__summer-image {
+  flex: 1;
+  position: relative;
+}
+
+.season-activities__image {
+  width: 100%;
+  height: 324px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.season-activities-spa,
+.season-activities-winter {
+  width: 100%;
+  background-color: #e9e9e7;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.season-activities__spa-text {
+  line-height: 1.5;
+  color: #555;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.season-activities__spa-image {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.season-activities-spa .season-activities__image {
+  width: 100%;
+  height: 324px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.season-activities-spa .spa-content {
+  width: 100%;
+  margin: 0 auto 40px auto;
+}
+
+.season-activities__spa-subtitle {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.spa-subtitle .spa-text {
+  text-align: center;
+}
+
+.any-questions {
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
+    url("../../img/season-activities-background.jpeg");
+  background-position: center center;
+  background-size: cover; 
+  background-repeat: no-repeat;
+  padding: 60px 20px;
+  color: #fff;
+  min-height: 500px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.any-questions__content {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.any-questions__text {
+  text-align: left;
+}
+
+.any-questions__title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.any-questions__subtitle {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.any-questions__form {
+  background: rgba(44, 40, 33, 0.8);
+  padding: 20px;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 70%;             /* форма уже, не во всю ширину */
+  max-width: 500px;       /* ограничение на больших экранах */
+  margin-left: auto;      /* смещаем вправо */
+}
+
+.any-questions__form input,
+.any-questions__form textarea {
+  background: rgba(89, 88, 85, 0.6);
+  border: none;;
+  padding: 12px 16px;
+  border-radius: 16px;
+  color: #fff;
+}
+
+.any-questions__form input::placeholder,
+.any-questions__form textarea::placeholder {
+  color: rgba(169, 168, 166, 0.7);
+}
+
+.any-questions__form button {
+  background: #f98251;
+  border: none;
+  padding: 12px;
+  border-radius: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 1024px) {
+  .season-activities__container {
+    padding: 0 15px;
+  }
+
+  .season-activities__title {
+    padding: 0 15px;
+    font-size: 2.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .season-activities__winter,
+  .season-activities__summer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .season-activities__winter {
+    flex-direction: column;
+  }
+
+  .season-activities__winter .season-activities__winter-image {
+    order: -1;
+  }
+
+  .season-activities__summer {
+    flex-direction: column;
+  }
+
+  .season-activities__summer .season-activities__content {
+    order: -1;
+  }
+
+  .season-activities__content {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .season-activities__winter-section {
+    padding: 0;
+  }
+
+  .season-activities__text,
+  .season-activities__spa-text {
+    text-align: justify;
+    hyphens: auto;
+  }
+
+  .season-activities-winter,
+  .season-activities-summer,
+  .season-activities-spa {
+    padding: 60px 20px;
+  }
+
+  .season-activities__winter-image,
+  .season-activities__summer-image {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .season-activities__image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .season-activities__subtitle,
+  .season-activities__text {
+    text-align: left;
+    width: 100%;
+  }
+   .season-activities-spa .season-activities__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .spa-content {
+    order: -1;
+    padding: 0 20px;
+  }
+
+  .season-activities__spa-image {
+    padding: 0 20px;
+  }
+
+  .any-questions__content {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .any-questions__text {
+    text-align: center;
+  }
+
+  .any-questions__title {
+    font-size: 2rem;
+  }
+
+  .any-questions__subtitle {
+    font-size: 1rem;
+  }
+
+  .any-questions__form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .season-activities__title {
+    font-size: 1.875rem;
+    padding: 0 10px;
+  }
+
+  .any-questions__title {
+    font-size: 1.75rem;
+  }
+
+  .any-questions__subtitle {
+    font-size: 1rem;
+  }
+}
