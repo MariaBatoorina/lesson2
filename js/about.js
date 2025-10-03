@@ -1,5 +1,5 @@
 function init() {
-  import("../about.season-activities.js");
+  import("./about.season-activities.js");
 }
 
 const totalPartials = document.querySelectorAll(
@@ -11,3 +11,4 @@ document.body.addEventListener("htmx:afterOnLoad", () => {
   loadedPartialsCount++;
   if (loadedPartialsCount === totalPartials) init();
 });
+
