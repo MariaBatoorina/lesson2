@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link
-      rel="shortcut icon"
-      href="img/global/favicon.png"
-      type="image/x-icon"
-    />
-    <link rel="stylesheet" href="css/index.css">
-  <script
-      src="https://unpkg.com/htmx.org@1.9.10"
-      integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC"
-      crossorigin="anonymous"
-    ></script>  <!--библиотека HTMX-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav 
-        data-hx-trigger="load" 
-        data-hx-sqap="outerHTML"
-        data-hx-get="global.header-nav.practical.html">
-    </nav> <!--загрузить (первые 2, и откуда 3)-->
-    </header>
-    <main class="main"></main>
-    <footer class="footer"></footer>  
-</body>  
+  <h1 id="hello">Hello, World!</h1>
+  <p id="hide">I will disappear</p>
+  <div id="box"></div>
+  <button id="btn">Click me</button>
+  <p id="p">Color me</p>
+  <button id="colorBtn">Change</button>
+  <div id="box2">I am a box</div>
+  <button id="hideBtn">Hide</button>
+  <p id="newtext">Hello</p>
+  <button id="newbtn">Add class</button>
+  <input id="name">
+  <p id="out"></p>
+  <img id="myImage" src="/image1.png" width="200">
+  <button id="changeBtn">Change image</button>
+  <button id="add-button">Create new element</button>
+    <ul id="my-list">
+        <li>New element 1</li>
+        <li>New element 2</li>
+    </ul>
+    <button id="remove-button">Delete last element</button>
+  <script src="index.js"></script>
+</body>
 </html>
